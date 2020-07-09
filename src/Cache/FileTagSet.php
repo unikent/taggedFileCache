@@ -31,7 +31,7 @@ class FileTagSet extends TagSet{
 
 		$oldID = $this->store->get($this->tagKey($name));
 
-		if ($oldID!==false){
+		if ($oldID!==false && $oldID!==null){
 			$job = new FlushTagFromFileCacheJob($oldID, static::$driver);
 			if(!empty($this->store->queue)){
 				$job->onQueue($this->store->queue);
