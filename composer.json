@@ -1,7 +1,6 @@
 {
     "name": "unikent/tfilecache",
     "description": "Taggable File Cache driver for Laravel. Allows the use of Cache tags with a file cache.",
-    "version" : "1.0.8",
     "authors": [
         {
             "name": "gjmh-unikent",
